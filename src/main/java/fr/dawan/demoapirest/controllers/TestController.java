@@ -3,6 +3,8 @@ package fr.dawan.demoapirest.controllers;
 
 import fr.dawan.demoapirest.dtos.LogDto;
 import fr.dawan.demoapirest.exceptions.AuthentificationException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +14,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/test")
 public class TestController {
+
+    private static Logger rootLogger = LoggerFactory.getLogger(TestController.class);
+    private static Logger debugLogger = LoggerFactory.getLogger("debugLogger");
 
     /*
     RestController: doit fournir des ressources - ends points + méthodes d'accès aux ressources
@@ -26,6 +31,8 @@ public class TestController {
     //@RequestMapping(method = RequestMethod.GET, value = "/test/m1")
     @GetMapping(value = "/m1", produces = "text/plain")
     public String m1(){
+        rootLogger.info("info......");
+        debugLogger.debug("debug.......");
         return "m1";
     }
 
