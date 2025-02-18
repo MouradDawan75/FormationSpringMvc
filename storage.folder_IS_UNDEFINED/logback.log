@@ -1032,3 +1032,230 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2025-02-18 12:52:27.025 INFO  29044 --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-02-18 12:52:27.031 INFO  29050 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
 2025-02-18 12:52:27.037 INFO  29056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2025-02-18 15:04:18.217 INFO  2062  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 2520 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-18 15:04:18.238 INFO  2083  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-18 15:04:20.155 INFO  4000  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-18 15:04:20.329 INFO  4174  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 2 JPA repository interfaces.
+2025-02-18 15:04:21.557 INFO  5402  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-18 15:04:21.582 INFO  5427  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-18 15:04:21.584 INFO  5429  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18 15:04:21.740 INFO  5585  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-18 15:04:21.741 INFO  5586  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3371 ms
+2025-02-18 15:04:22.123 INFO  5968  --- [main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-18 15:04:22.264 INFO  6109  --- [main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-18 15:04:22.346 INFO  6191  --- [main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-02-18 15:04:23.000 INFO  6845  --- [main] o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-18 15:04:23.073 INFO  6918  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-02-18 15:04:23.346 INFO  7191  --- [main] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@15e5246
+2025-02-18 15:04:23.350 INFO  7195  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2025-02-18 15:04:23.551 INFO  7396  --- [main] o.hibernate.orm.connections.pooling : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.5.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-18 15:04:25.851 INFO  9696  --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-18 15:04:25.998 INFO  9843  --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:04:26.756 INFO  10601 --- [main] o.s.d.j.r.q.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-18 15:04:27.887 WARN  11732 --- [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-18 15:04:27.962 INFO  11807 --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-18 15:04:28.041 WARN  11886 --- [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invalid mapping on handler class [fr.dawan.demoapirest.controllers.ProductController]: public fr.dawan.demoapirest.dtos.CountDto fr.dawan.demoapirest.controllers.ProductController.countBy(java.util.Optional) throws java.lang.Exception
+2025-02-18 15:04:28.043 INFO  11888 --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:04:28.048 INFO  11893 --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2025-02-18 15:04:28.056 INFO  11901 --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2025-02-18 15:04:28.060 INFO  11905 --- [main] o.a.catalina.core.StandardService : Stopping service [Tomcat]
+2025-02-18 15:04:28.099 INFO  11944 --- [main] o.s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-18 15:04:28.144 ERROR 11989 --- [main] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected:
+/{/count/{search}
+  ^
+Expected close capture character after variable name }
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
+2025-02-18 15:05:19.369 INFO  2030  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 7144 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-18 15:05:19.377 INFO  2038  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-18 15:05:21.444 INFO  4105  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-18 15:05:21.613 INFO  4274  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 2 JPA repository interfaces.
+2025-02-18 15:05:22.863 INFO  5524  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-18 15:05:22.896 INFO  5557  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-18 15:05:22.898 INFO  5559  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18 15:05:23.038 INFO  5699  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-18 15:05:23.040 INFO  5701  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3518 ms
+2025-02-18 15:05:23.410 INFO  6071  --- [main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-18 15:05:23.518 INFO  6179  --- [main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-18 15:05:23.584 INFO  6245  --- [main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-02-18 15:05:24.133 INFO  6794  --- [main] o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-18 15:05:24.203 INFO  6864  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-02-18 15:05:24.393 INFO  7054  --- [main] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@66b6873f
+2025-02-18 15:05:24.397 INFO  7058  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2025-02-18 15:05:24.511 INFO  7172  --- [main] o.hibernate.orm.connections.pooling : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.5.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-18 15:05:26.918 INFO  9579  --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-18 15:05:27.079 INFO  9740  --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:05:27.689 INFO  10350 --- [main] o.s.d.j.r.q.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-18 15:05:28.848 WARN  11509 --- [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-18 15:05:28.927 INFO  11588 --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-18 15:05:29.077 DEBUG 11738 --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2025-02-18 15:05:29.177 DEBUG 11838 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-18 15:05:29.246 DEBUG 11907 --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-18 15:05:29.357 DEBUG 12018 --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-18 15:05:29.666 INFO  12327 --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-18 15:05:29.691 INFO  12352 --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 11.39 seconds (process running for 12.915)
+2025-02-18 15:06:09.635 INFO  52296 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 15:06:09.635 INFO  52296 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-18 15:06:09.637 DEBUG 52298 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-18 15:06:09.637 DEBUG 52298 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-18 15:06:09.637 DEBUG 52298 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-18 15:06:09.639 DEBUG 52300 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@75375bb0
+2025-02-18 15:06:09.640 DEBUG 52301 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7dbe9654
+2025-02-18 15:06:09.640 DEBUG 52301 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-18 15:06:09.641 INFO  52302 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2025-02-18 15:06:09.665 DEBUG 52326 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : POST "/api/products/save", parameters={multipart}
+2025-02-18 15:06:09.762 DEBUG 52423 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#saveOrUpdate(MultipartFile, String)
+2025-02-18 15:06:10.314 DEBUG 52975 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:06:10.349 DEBUG 53010 --- [http-nio-8085-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.ProductDto@7887b1a]
+2025-02-18 15:06:10.374 DEBUG 53035 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:06:59.619 DEBUG 102280 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : POST "/api/products/save", parameters={multipart}
+2025-02-18 15:06:59.630 DEBUG 102291 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#saveOrUpdate(MultipartFile, String)
+2025-02-18 15:06:59.648 DEBUG 102309 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:06:59.648 DEBUG 102309 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.ProductDto@50d3f3a8]
+2025-02-18 15:06:59.652 DEBUG 102313 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:07:56.175 DEBUG 158836 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : GET "/api/products/1/5", parameters={multipart}
+2025-02-18 15:07:56.180 DEBUG 158841 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getAllBy(int, int, Optional)
+2025-02-18 15:07:56.316 DEBUG 158977 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:07:56.320 DEBUG 158981 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [[fr.dawan.demoapirest.dtos.ProductDto@a7d1f00, fr.dawan.demoapirest.dtos.ProductDto@4a5648c6]]
+2025-02-18 15:07:56.325 DEBUG 158986 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:08:09.180 DEBUG 171841 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : GET "/api/products/1/5/pc", parameters={multipart}
+2025-02-18 15:08:09.186 DEBUG 171847 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getAllBy(int, int, Optional)
+2025-02-18 15:08:09.198 DEBUG 171859 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:08:09.199 DEBUG 171860 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [[fr.dawan.demoapirest.dtos.ProductDto@5c536101]]
+2025-02-18 15:08:09.201 DEBUG 171862 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:08:22.313 DEBUG 184974 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : GET "/api/products/1/1", parameters={multipart}
+2025-02-18 15:08:22.318 DEBUG 184979 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getAllBy(int, int, Optional)
+2025-02-18 15:08:22.337 DEBUG 184998 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:08:22.339 DEBUG 185000 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor : Writing [[fr.dawan.demoapirest.dtos.ProductDto@29fbd4d7]]
+2025-02-18 15:08:22.341 DEBUG 185002 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:08:51.575 DEBUG 214236 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : GET "/api/products/1", parameters={multipart}
+2025-02-18 15:08:51.583 DEBUG 214244 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getById(long)
+2025-02-18 15:08:51.599 DEBUG 214260 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-02-18 15:08:51.602 DEBUG 214263 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.ProductDto@42493b6b]
+2025-02-18 15:08:51.605 DEBUG 214266 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:08:59.766 DEBUG 222427 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : GET "/api/products/55", parameters={multipart}
+2025-02-18 15:08:59.773 DEBUG 222434 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getById(long)
+2025-02-18 15:08:59.783 DEBUG 222444 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2025-02-18 15:08:59.784 DEBUG 222445 --- [http-nio-8085-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing ["Product with id = 55 not found."]
+2025-02-18 15:08:59.789 DEBUG 222450 --- [http-nio-8085-exec-8] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-18 15:10:41.538 DEBUG 324199 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/api/products/image/1", parameters={multipart}
+2025-02-18 15:10:41.555 DEBUG 324216 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getProductImage(long)
+2025-02-18 15:10:41.573 DEBUG 324234 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-18 15:10:41.574 DEBUG 324235 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/pc%20dell-dell.jpg]]
+2025-02-18 15:10:41.579 DEBUG 324240 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler fr.dawan.demoapirest.interceptors.MyGlobalExceptionHandler#handleGenericException(Exception, WebRequest)
+2025-02-18 15:10:41.585 ERROR 324246 --- [http-nio-8085-exec-2] f.d.d.i.MyGlobalExceptionHandler : URL [file:///c:/pc%20dell-dell.jpg] cannot be resolved in the file system for checking its content length
+2025-02-18 15:10:41.609 DEBUG 324270 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-02-18 15:10:41.611 DEBUG 324272 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.LogDto@48b87714]
+2025-02-18 15:10:41.616 DEBUG 324277 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.io.FileNotFoundException: URL [file:///c:/pc%20dell-dell.jpg] cannot be resolved in the file system for checking its content length]
+2025-02-18 15:10:41.619 DEBUG 324280 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 500 INTERNAL_SERVER_ERROR
+2025-02-18 15:11:37.383 INFO  380044 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-18 15:11:37.400 INFO  380061 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-18 15:11:37.411 INFO  380072 --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:11:37.416 INFO  380077 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2025-02-18 15:11:37.424 INFO  380085 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2025-02-18 15:12:53.339 INFO  1830  --- [main] f.d.d.DemoapirestApplication : Starting DemoapirestApplication using Java 17.0.12 with PID 9880 (C:\Users\oem\Desktop\SpringFormation\demoapirest\target\classes started by oem in C:\Users\oem\Desktop\SpringFormation\demoapirest)
+2025-02-18 15:12:53.359 INFO  1850  --- [main] f.d.d.DemoapirestApplication : The following 1 profile is active: "dev"
+2025-02-18 15:12:55.368 INFO  3859  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-18 15:12:55.556 INFO  4047  --- [main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159 ms. Found 2 JPA repository interfaces.
+2025-02-18 15:12:56.844 INFO  5335  --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port 8085 (http)
+2025-02-18 15:12:56.873 INFO  5364  --- [main] o.a.catalina.core.StandardService : Starting service [Tomcat]
+2025-02-18 15:12:56.875 INFO  5366  --- [main] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-18 15:12:57.064 INFO  5555  --- [main] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2025-02-18 15:12:57.068 INFO  5559  --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3554 ms
+2025-02-18 15:12:57.729 INFO  6220  --- [main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-18 15:12:57.898 INFO  6389  --- [main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-18 15:12:58.041 INFO  6532  --- [main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2025-02-18 15:12:58.801 INFO  7292  --- [main] o.s.o.j.p.SpringPersistenceUnitInfo : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-18 15:12:58.886 INFO  7377  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2025-02-18 15:12:59.141 INFO  7632  --- [main] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6068ebb2
+2025-02-18 15:12:59.146 INFO  7637  --- [main] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2025-02-18 15:12:59.279 INFO  7770  --- [main] o.hibernate.orm.connections.pooling : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.5.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-18 15:13:01.864 INFO  10355 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-18 15:13:02.007 INFO  10498 --- [main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:13:02.711 INFO  11202 --- [main] o.s.d.j.r.q.QueryEnhancerFactory : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-02-18 15:13:03.779 WARN  12270 --- [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-18 15:13:03.914 INFO  12405 --- [main] o.s.v.b.OptionalValidatorFactoryBean : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-18 15:13:04.154 DEBUG 12645 --- [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2025-02-18 15:13:04.316 DEBUG 12807 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-02-18 15:13:04.457 DEBUG 12948 --- [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-18 15:13:04.568 DEBUG 13059 --- [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-18 15:13:05.462 INFO  13953 --- [main] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port 8085 (http) with context path '/'
+2025-02-18 15:13:05.560 INFO  14051 --- [main] f.d.d.DemoapirestApplication : Started DemoapirestApplication in 13.081 seconds (process running for 14.597)
+2025-02-18 15:13:27.424 INFO  35915 --- [http-nio-8085-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-18 15:13:27.427 INFO  35918 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2025-02-18 15:13:27.429 DEBUG 35920 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected StandardServletMultipartResolver
+2025-02-18 15:13:27.430 DEBUG 35921 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected AcceptHeaderLocaleResolver
+2025-02-18 15:13:27.432 DEBUG 35923 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected FixedThemeResolver
+2025-02-18 15:13:27.435 DEBUG 35926 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b17aa0b
+2025-02-18 15:13:27.436 DEBUG 35927 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Detected org.springframework.web.servlet.support.SessionFlashMapManager@25198ead
+2025-02-18 15:13:27.436 DEBUG 35927 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-18 15:13:27.437 INFO  35928 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2025-02-18 15:13:27.455 DEBUG 35946 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : GET "/api/products/image/1", parameters={multipart}
+2025-02-18 15:13:27.523 DEBUG 36014 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getProductImage(long)
+2025-02-18 15:13:27.834 DEBUG 36325 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-18 15:13:27.840 DEBUG 36331 --- [http-nio-8085-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/pc%20dell-dell.jpg]]
+2025-02-18 15:13:27.869 DEBUG 36360 --- [http-nio-8085-exec-3] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:13:35.451 DEBUG 43942 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : GET "/api/products/image/2", parameters={multipart}
+2025-02-18 15:13:35.465 DEBUG 43956 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getProductImage(long)
+2025-02-18 15:13:35.472 DEBUG 43963 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-18 15:13:35.473 DEBUG 43964 --- [http-nio-8085-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/ecran%20hp-hp.jpg]]
+2025-02-18 15:13:35.486 DEBUG 43977 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:13:58.901 DEBUG 67392 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : POST "/api/products/save", parameters={multipart}
+2025-02-18 15:13:58.910 DEBUG 67401 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#saveOrUpdate(MultipartFile, String)
+2025-02-18 15:13:59.280 DEBUG 67771 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-02-18 15:13:59.306 DEBUG 67797 --- [http-nio-8085-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [fr.dawan.demoapirest.dtos.ProductDto@54f6fedb]
+2025-02-18 15:13:59.325 DEBUG 67816 --- [http-nio-8085-exec-4] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:14:33.937 DEBUG 102428 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : GET "/api/products/image/2", parameters={multipart}
+2025-02-18 15:14:33.952 DEBUG 102443 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#getProductImage(long)
+2025-02-18 15:14:33.962 DEBUG 102453 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Found 'Content-Type:image/jpeg' in response
+2025-02-18 15:14:33.963 DEBUG 102454 --- [http-nio-8085-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing [URL [file:///c:/tempBidon/new%20ecran%20hp-hp2.jpg]]
+2025-02-18 15:14:33.967 DEBUG 102458 --- [http-nio-8085-exec-5] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:15:12.892 DEBUG 141383 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : DELETE "/api/products/2", parameters={multipart}
+2025-02-18 15:15:12.905 DEBUG 141396 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#deleteById(long)
+2025-02-18 15:15:12.958 DEBUG 141449 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain]
+2025-02-18 15:15:12.959 DEBUG 141450 --- [http-nio-8085-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing ["Product deleted."]
+2025-02-18 15:15:12.965 DEBUG 141456 --- [http-nio-8085-exec-6] o.s.web.servlet.DispatcherServlet : Completed 200 OK
+2025-02-18 15:15:20.314 DEBUG 148805 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : DELETE "/api/products/200", parameters={multipart}
+2025-02-18 15:15:20.319 DEBUG 148810 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to fr.dawan.demoapirest.controllers.ProductController#deleteById(long)
+2025-02-18 15:15:20.326 DEBUG 148817 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain]
+2025-02-18 15:15:20.327 DEBUG 148818 --- [http-nio-8085-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor : Writing ["Product with id = 200 not found."]
+2025-02-18 15:15:20.329 DEBUG 148820 --- [http-nio-8085-exec-7] o.s.web.servlet.DispatcherServlet : Completed 404 NOT_FOUND
+2025-02-18 15:16:28.429 INFO  216920 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown : Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-18 15:16:28.447 INFO  216938 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown : Graceful shutdown complete
+2025-02-18 15:16:28.455 INFO  216946 --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-18 15:16:28.459 INFO  216950 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2025-02-18 15:16:28.465 INFO  216956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
